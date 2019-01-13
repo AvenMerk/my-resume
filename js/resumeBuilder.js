@@ -1,16 +1,13 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
 let data = '%data%';
 
 let bio = {
   "name": "Aleksandra Bystrova",
   "role": "Junior front-end developer",
   "contacts" : {
-    "mobile": "89779997777",
+    "mobile": "89772731836",
     "email": "kremnevaaj@gmail.com",
-    "github": "AvenMerk",
-    "location": "Russia, Moscow",
+    "github": "<a href='https://github.com/AvenMerk'>AvenMerk</a>",
+    "location": "Moscow, Russia",
   },
   "welcomeMessage": "Hi, I'm currently a housewife, that studying JS to find a good and interesting job. Welcome to my portfolio! ^_^",
   "skills": ["junior JavaScript", "playing balalaika", "searching for yummies"],
@@ -26,7 +23,7 @@ let education ={
       "degree": "bachelor",
       "majors": ["Physics"],
       "dates": "2010-2014",
-      "url": "https://www.dvfu.ru/en/"
+      "url": "<a href='https://www.dvfu.ru/en/'>dvfu.ru</a>"
     }, 
     {
       "name": "National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)",
@@ -34,15 +31,15 @@ let education ={
       "degree": "master",
       "majors": ["Physics"],
       "dates": "2014-2016",
-      "url": "https://eng.mephi.ru/"
+      "url": "<a href='https://eng.mephi.ru/'>mephi.ru</a>"
     }
   ],       
   "onlineCourses": [
     {
       "title": "Front-End Web Developer Nanodegree Program",
       "school": "Udacity",
-      "dates": "February 2018 - present",
-      "url": "https://classroom.udacity.com/nanodegrees/nd001/"
+      "dates": "February 2018 - July 2018",
+      "url": "<a href='https://classroom.udacity.com/nanodegrees/nd001/'>https://classroom.udacity.com</a>"
     }
   ]
      // display: function
@@ -125,8 +122,6 @@ bio.display = function() {
   }
 };
 
-
-
 work.display = function() {
     if (work.jobs.length > 0) {
         $('#workExperience').append(HTMLworkStart);
@@ -151,17 +146,14 @@ projects.display = function() {
     if (projects.projects.length > 0) {
         $('#projects').append(HTMLprojectStart);
 
-
         projects.projects.forEach(function(project) {
             let formattedProjTitle = HTMLprojectTitle.replace(data, project.title).replace("#", project.url);
             let formattedProjDates = HTMLprojectDates.replace(data, project.dates);
             let formattedProjDescription = HTMLprojectDescription.replace(data, project.description);
 
-
             $('.project-entry:last').append(formattedProjTitle);
             $('.project-entry:last').append(formattedProjDates);
             $('.project-entry:last').append(formattedProjDescription);
-
 
             if (project.images.length > 0) {
                 project.images.forEach(function(projectImage) {
@@ -170,11 +162,26 @@ projects.display = function() {
                 });
             }
         });
-
     }
 };
 
 education.display = function() {
+
+    for (let i = 0; i < education.schools.length; i++) {
+        $("#education").append(HTMLschoolStart);
+        let formattedSchoolName = HTMLschoolName.replace(data, education.schools[i].name);
+        let formattedMajor = HTMLschoolMajor.replace(data, education.schools[i].majors);
+        let formattedDegree = HTMLschoolDegree.replace(data, education.schools[i].degree);
+        let formattedDates = HTMLschoolDates.replace(data, education.schools[i].dates);
+        let formattedLocation = HTMLschoolLocation.replace(data, education.schools[i].location);
+        let formattedURL = HTMLonlineURL.replace(data, education.schools[i].url);
+        $('.education-entry:last').append(formattedSchoolName + formattedDegree);
+        $('.education-entry:last').append(formattedDates);
+        $('.education-entry:last').append(formattedMajor);
+        $('.education-entry:last').append(formattedLocation);
+        $('.education-entry:last').append(formattedURL);
+    }
+
     if(education.onlineCourses.length > 0) {
         $('#education').append(HTMLschoolStart);
 
