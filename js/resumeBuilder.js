@@ -12,7 +12,6 @@ let bio = {
   "welcomeMessage": "Hi, I'm currently a housewife, that studying JS to find a good and interesting job. Welcome to my portfolio! ^_^",
   "skills": ["junior JavaScript", "playing balalaika", "searching for yummies"],
   "biopic": "./images/Photo.png"
-  //"display":
 };
 
 let education ={
@@ -42,7 +41,6 @@ let education ={
       "url": "<a href='https://classroom.udacity.com/nanodegrees/nd001/'>https://classroom.udacity.com</a>"
     }
   ]
-     // display: function
 };
 
 let work = {
@@ -61,7 +59,6 @@ let work = {
     "dates": "September 2013 - June 2014",
     "description": "Teacher of physics for 7-11 classes"
   }]          
-      //display: function
 };
 
 let  projects = {
@@ -88,7 +85,6 @@ let  projects = {
       "url": "./projects/project-pixel-art-maker-starter-master/index.html"
     }
   ]
-      //display: function
 }; 
 
 bio.display = function() {
