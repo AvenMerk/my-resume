@@ -6,7 +6,7 @@ let bio = {
   "contacts" : {
     "mobile": "89772731836",
     "email": "kremnevaaj@gmail.com",
-    "github": "<a href='https://github.com/AvenMerk'>AvenMerk</a>",
+    "github": "AvenMerk",
     "location": "Moscow, Russia",
   },
   "welcomeMessage": "Hi, I'm currently a housewife, that studying JS to find a good and interesting job. Welcome to my portfolio! ^_^",
