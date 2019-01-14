@@ -40,6 +40,10 @@ h6 {
   padding: 0 5%;
 }
 
+/*.project-entry {*/
+  /*display: flex;*/
+/*}*/
+
 h1 {
   font-size: 40px;
   color: #87bcde;
@@ -143,7 +147,14 @@ a {
   background-color: #2a507f;
 }
 
-/* TODO: Replace with image later */
+.project-image {
+  min-width: 532px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 #header {
   background-color:  #2a507f;
 }
@@ -250,3 +261,19 @@ span {
     display: block;
   }
 }
+
+@media only screen and (min-width:900px) {
+  #header,
+  #workExperience,
+  #projects,
+  #education,
+  #footerContacts,
+  h2 .orange
+  {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+  }
+}
+
+
