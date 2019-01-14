@@ -68,21 +68,21 @@ let  projects = {
             "dates": "February 2018 - March 2018",
             "description": "Creating an online memory game (part of Udacity's Front-End Web Developer Nanodegree.",
             "images": ["./images/Memory.png"],
-            "url": "https://avenmerk.ru/memorygame"
+            "url": "https://avenmerk.ru/memory-game"
         },
         {
             "title": "Arcade game",
             "dates": "April 2018 - May 2018",
             "description": "Creating an online arcade game (part of Udacity's Front-End Web Developer Nanodegree).",
             "images": ["./images/arcade.png"],
-            "url": "https://avenmerk.ru/arcade"
+            "url": "https://avenmerk.ru/arcade-game"
         },
         {
             "title": "Pixel Art Maker",
             "dates": "March 2018 - April 2018",
             "description": "Create a webpage with canvas to make a pixel art",
             "images": ["./images/pixelart.png"],
-            "url": "https://avenmerk.ru/pixelart"
+            "url": "https://avenmerk.ru/pixel-art"
         },
         {
             "title": "Posters shop",
