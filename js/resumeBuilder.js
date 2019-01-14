@@ -62,29 +62,36 @@ let work = {
 };
 
 let  projects = {
-  "projects": [
-    {
-      "title": "Memory game", 
-      "dates": "February 2018 - March 2018",
-      "description": "Creating an online memory game (part of Udacity's Front-End Web Developer Nanodegree.",
-      "images": ["./images/Memory.png"],
-      "url": "./projects/fend-project-memory-game-master/index.html"
-    }, 
-    {
-      "title": "Arcade game", 
-      "dates": "April 2018 - May 2018",
-      "description": "Creating an online arcade game (part of Udacity's Front-End Web Developer Nanodegree).",
-      "images": ["./images/arcade.png"],
-      "url": "./projects/frontend-nanodegree-arcade-game-master/index.html"
-    },
-    {
-      "title": "Pixel Art Maker", 
-      "dates": "March 2018 - April 2018",
-      "description": "Create a webpage with canvas to make a pixel art",
-      "images": ["./images/pixelart.png"],
-      "url": "./projects/project-pixel-art-maker-starter-master/index.html"
-    }
-  ]
+    "projects": [
+        {
+            "title": "Memory game",
+            "dates": "February 2018 - March 2018",
+            "description": "Creating an online memory game (part of Udacity's Front-End Web Developer Nanodegree.",
+            "images": ["./images/Memory.png"],
+            "url": "https://avenmerk.ru/memorygame"
+        },
+        {
+            "title": "Arcade game",
+            "dates": "April 2018 - May 2018",
+            "description": "Creating an online arcade game (part of Udacity's Front-End Web Developer Nanodegree).",
+            "images": ["./images/arcade.png"],
+            "url": "https://avenmerk.ru/arcade"
+        },
+        {
+            "title": "Pixel Art Maker",
+            "dates": "March 2018 - April 2018",
+            "description": "Create a webpage with canvas to make a pixel art",
+            "images": ["./images/pixelart.png"],
+            "url": "https://avenmerk.ru/pixelart"
+        },
+        {
+            "title": "Posters shop",
+            "description": "Experimental react-redux project",
+            "images": ["./images/posters-shop.png"],
+            "url": "https://avenmerk.ru/postershop"
+        },
+
+    ]
 }; 
 
 bio.display = function() {
@@ -144,11 +151,9 @@ projects.display = function() {
 
         projects.projects.forEach(function(project) {
             let formattedProjTitle = HTMLprojectTitle.replace(data, project.title).replace("#", project.url);
-            let formattedProjDates = HTMLprojectDates.replace(data, project.dates);
             let formattedProjDescription = HTMLprojectDescription.replace(data, project.description);
 
             $('.project-entry:last').append(formattedProjTitle);
-            $('.project-entry:last').append(formattedProjDates);
             $('.project-entry:last').append(formattedProjDescription);
 
             if (project.images.length > 0) {
