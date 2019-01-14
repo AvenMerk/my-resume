@@ -147,6 +147,13 @@ a {
   background-color: #2a507f;
 }
 
+.blue-subtitle {
+    font-weight: bold;
+    font-size: medium;
+    color: #2a507f;
+    padding-top: 1em;
+}
+
 .project-image {
   min-width: 532px;
   display: block;
