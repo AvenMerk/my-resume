@@ -9,7 +9,7 @@ let bio = {
     "github": "AvenMerk",
     "location": "Moscow, Russia",
   },
-  "welcomeMessage": "Hi, I'm currently a housewife, that studying JS to find an interesting job. Welcome to my portfolio! ^_^",
+  "welcomeMessage": "Hi, I'm currently a housewife, study JS to find an interesting job. Welcome to my portfolio! ^_^",
   "skills": ["junior JavaScript", "HTML", "CSS", "React/Redux", "basic knowledge about SQL, Node.js, jQuery"],
   "biopic": "./images/Photo.png"
 };
@@ -53,7 +53,7 @@ let work = {
     "description": "Administrator of 1s databases, workability support, development of reports for accounting and sales" 
   }, 
   {
-   "employer": 'Private educational institution"Educational center: Harmony"',
+   "employer": 'Private educational institution "Educational center: Harmony"',
     "title": "Teacher of physics", 
     "location": "Vladivostok, Russia",
     "dates": "September 2013 - June 2014",

@@ -73,7 +73,7 @@ h4 {
   line-height: 17px;
 }
 
-h2,
+/*h2,*/
 h3,
 h4,
 h5 {
@@ -175,6 +175,15 @@ a {
   padding: 10px;
 }
 
+.flex-box-footer {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -221,10 +230,6 @@ span {
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-
   .education-entry,
   .work-entry,
   .project-entry {
@@ -239,9 +244,6 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
   .biopic {
     width: 150px;
   }

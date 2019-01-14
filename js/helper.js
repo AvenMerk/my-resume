@@ -34,7 +34,7 @@ var HTMLprojectImage = '<div class="project-image"><img src="%data%"></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<p class="blue-subtitle">%data%';
-var HTMLschoolDegree = ' -- %data%</p>';
+var HTMLschoolDegree = ' - %data%</p>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
