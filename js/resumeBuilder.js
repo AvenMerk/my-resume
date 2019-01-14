@@ -9,9 +9,9 @@ let bio = {
     "github": "AvenMerk",
     "location": "Moscow, Russia",
   },
-  "welcomeMessage": "Hi, I'm currently a housewife, study JS to find an interesting job. Welcome to my portfolio! ^_^",
+  "welcomeMessage": "Hi, I'm Sasha. Welcome to my portfolio! ^_^",
   "skills": ["junior JavaScript", "HTML", "CSS", "React/Redux", "basic knowledge about SQL, Node.js, jQuery"],
-  "biopic": "./images/Photo.png"
+  "biopic": "./images/Photo.jpg"
 };
 
 let education ={
