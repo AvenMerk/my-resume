@@ -64,6 +64,12 @@ let work = {
 let  projects = {
     "projects": [
         {
+            "title": "Posters shop",
+            "description": "Experimental react-redux project",
+            "images": ["./images/posters-shop.png"],
+            "url": "https://avenmerk.ru/postershop"
+        },
+        {
             "title": "Memory game",
             "dates": "February 2018 - March 2018",
             "description": "Creating an online memory game (part of Udacity's Front-End Web Developer Nanodegree.",
@@ -83,13 +89,7 @@ let  projects = {
             "description": "Create a webpage with canvas to make a pixel art",
             "images": ["./images/pixelart.png"],
             "url": "https://avenmerk.ru/pixel-art"
-        },
-        {
-            "title": "Posters shop",
-            "description": "Experimental react-redux project",
-            "images": ["./images/posters-shop.png"],
-            "url": "https://avenmerk.ru/postershop"
-        },
+        }
 
     ]
 }; 
