@@ -158,7 +158,7 @@ projects.display = function() {
 
             if (project.images.length > 0) {
                 project.images.forEach(function(projectImage) {
-                  let formattedProjectImage = HTMLprojectImage.replace(data, projectImage);
+                  let formattedProjectImage = HTMLprojectImage.replace(data, projectImage).replace("#", project.url);
                   $(".project-entry:last").append(formattedProjectImage);
                 });
             }
