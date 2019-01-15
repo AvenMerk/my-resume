@@ -138,6 +138,12 @@ a {
   color: #effcfb;
 }
 
+.project-title {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .gray {
   background-color: #effcfb;
   padding-bottom: 10px;
